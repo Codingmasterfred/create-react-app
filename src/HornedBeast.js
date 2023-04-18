@@ -8,6 +8,6 @@ function HornedBeast(props) {
             <p>{props.text}</p>
         </div>
     )
-};
+}
 
 export default HornedBeast
