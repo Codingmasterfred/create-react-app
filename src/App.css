@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.Div{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+button{
+  width:100px;
+  height:30px;
+  border-radius: 30%;
+}
