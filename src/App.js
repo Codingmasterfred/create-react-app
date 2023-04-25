@@ -36,18 +36,6 @@ function App() {
       {/* Creating a div element with a class name of "App" */}
       <Header/>
       {/* Rendering the Header component. */}
-
-      <button onClick ={() => {
-        if(displaySelectedBeast === true){
-          SetDisplaySelectedBeast = false
-        }else{
-        SetDisplaySelectedBeast(true)
-        }
-      }}>
-        {/* Creating a button element with an onClick event handler. When the button is clicked, the value of displaySelectedBeast is toggled. */}
-        {/* If the displaySelectedBeast variable is currently true, then the SetDisplaySelectedBeast function is called with an argument of false. This sets the displaySelectedBeast state variable to false. */}
-        {/* If the displaySelectedBeast variable is currently false, then the SetDisplaySelectedBeast function is called with an argument of true. This sets the displaySelectedBeast state variable to true. */}
-      </button>
       {SelectedBeastHTML}
       {/* Rendering the SelectedBeastHTML variable, which will be either the SelectedBeast component or an empty div element depending on the value of displaySelectedBeast. */}
       <Main data = {data} updateFunction={SetDisplaySelectedBeast} beastUpdateFunction={setCurrentSelectedBeast}/>
