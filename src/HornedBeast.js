@@ -20,10 +20,10 @@ function HornedBeast(props) {
     return (
         <Card style = {{width:"20rem"}}>
             <h2>{props.title}</h2>
-            <img onClick={()=>{
+            <img alt="ImageOnCard" onClick={()=>{
                 props.updateFunction(true)
-                props.beastUpdateFunction({"title": props.title, "text": props.text, "imageUrl": props.imageUrl})
-            }} src={props.imageUrl} class = "mv-100" height={"200px"}/>
+                props.beastUpdateFunction({"title": props.title, "text": props.text, "imageUrl": props.imageUrl, "horns": props.horns})
+            }} src={props.imageUrl} className = "mv-100" height={"200px"} />
             <p>{props.text} </p>
             {/* The function returns a Card component from the react-bootstrap library. The Card component contains the title, image, text, "Like" button, and the counter for the number of times the "Like" button has been clicked. The onClick event listener is attached to the image and updates the parent component using the updateFunction and beastUpdateFunction props passed down to HornedBeast. */}
             {/* &#9829 creates the heart emoji and the timesClick display the amount of times clicked */}
