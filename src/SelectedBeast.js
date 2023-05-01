@@ -1,4 +1,4 @@
-import {useState} from "react";
+// import {useState} from "react";
 //This line imports the useState hook from the React library, which is used to manage state in functional components.
 import React from "react"
 //This line imports the main React library, which is required in all React components.
@@ -19,7 +19,7 @@ return (
       <Modal.Title>{props.beast.title}</Modal.Title>
       {/* This line displays the title of the beast passed in as a prop. */}
     </Modal.Header>
-    <Modal.Body id="ModalImgDiv"><img id="ModalImg" src ={props.beast.imageUrl}/>{props.beast.text}</Modal.Body>
+    <Modal.Body id="ModalImgDiv"><img id="ModalImg" alt="ImageInbody" src ={props.beast.imageUrl}/>{props.beast.text}</Modal.Body>
     {/* This line displays the imageUrl and text of the beast passed in as a prop. */}
     <Modal.Footer>
         {/* This is the footer section of the Modal, which contains buttons. */}
