@@ -11,7 +11,7 @@ function Main({ data, updateFunction, beastUpdateFunction, HornsOfHornedBeastTha
     console.log("data", data.horns)
     // This declares the "Main" function component that takes in three props: "data", "updateFunction", and "beastUpdateFunction".
     let filterData = data.filter(item => {
-        if(item.horns == HornsOfHornedBeastThatShouldDisplay || HornsOfHornedBeastThatShouldDisplay === null){
+        if(item.horns == HornsOfHornedBeastThatShouldDisplay || HornsOfHornedBeastThatShouldDisplay === null || HornsOfHornedBeastThatShouldDisplay === ""){
             return true 
         }else{
             return false
